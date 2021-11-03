@@ -1,9 +1,14 @@
-<h2>家事一覧<h2>
-<a href="#" class="btn-square">家事を作成する</a>
-<%= form_with(url: search_houseworks_path, local: true, method: :get, class: "search-form") do |form| %>
+<h2>家事一覧</h2>
+ <div class="housework-search">
+  <%= form_with(url: search_houseworks_path, local: true, method: :get, class: "search-form") do |form| %>
   <%= form.text_field :keyword, placeholder: "家事を検索する", class: "search-input" %>
   <%= form.submit "検索", class: "search-btn" %>
-<% end %>
+  <% end %>
+ </div>
+
+   <div class="housework-create">
+  <%= link_to "家事を作成する", new_housework_path, class: "btn-square" %>
+ </div>
 
 <div class="container">
   <% @housework.each do |housework| %>

@@ -12,7 +12,7 @@ class HouseworksController < ApplicationController
   def create
     @housework = Housework.new(housework_params)
     if @housework.save
-      redirect_to root_path
+      redirect_to houseworks_path
     else
         render :new
     end

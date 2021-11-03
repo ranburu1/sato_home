@@ -576,7 +576,7 @@
   width: 50%;
   margin: 5px 0 15px;
   padding: 25px;
-  border: 1px solid #D8D8D8;
+  border: 3px solid black;
   border-radius: 5px;
 }
 
@@ -586,6 +586,10 @@
 
 h2 {
   text-align: center;
+  background: #668ad8; /*背景色*/
+  padding: 0.5em;/*文字周りの余白*/
+  color: white;/*文字を白に*/
+  border-radius: 0.5em;/*角の丸み*/
 }
 
 .content{
@@ -627,3 +631,66 @@ h3{
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
 }
+
+.top-page-header{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+.site-title{
+  font-size: 40px;
+  margin-left: 40px;
+}
+
+.btn-circle-flat {
+  display: inline-block;
+  text-decoration: none;
+  background: #87befd;
+  color: #FFF;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  transition: .4s;
+}
+
+.btn-circle-flat:hover {
+  background: #668ad8;
+}
+
+.top-container{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.userList{
+  text-decoration: none;
+    background: #668ad8; /*背景色*/
+    padding: 0.5em;/*文字周りの余白*/
+    color: white;/*文字を白に*/
+    border-radius: 0.5em;/*角の丸み*/
+}
+
+body{
+  background-image: url("12011.jpg");
+}
+
+.housework-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.housework-search{
+  text-align: center;
+}
+
+.housework-create{
+  text-align: center;
+  margin-top: 20px;
+}
+
