@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
   root to: "homes#index"
-  resources :houseworks
+  resources :houseworks do
+   collection do
+    get 'search'
+   end
+  end
 end
