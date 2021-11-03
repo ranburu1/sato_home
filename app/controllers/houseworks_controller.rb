@@ -32,6 +32,12 @@ class HouseworksController < ApplicationController
     end
   end
 
+  def destroy
+    if @housework.destroy
+     redirect_to houseworks_path
+    end
+   end
+
   private
 
   def housework_params
