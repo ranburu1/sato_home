@@ -1,0 +1,8 @@
+  <div class="container">
+    <h2>家事を編集する</h2>
+    <%= form_with(model: @housework, local: true) do |form| %>
+      <%= form.text_field :title, placeholder: "タイトル" %>
+      <%= form.text_area :manner, placeholder: "やり方" %>
+      <%= form.submit "編集する" %>
+    <% end %>
+  </div>
