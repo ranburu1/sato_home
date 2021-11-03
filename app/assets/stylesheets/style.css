@@ -579,3 +579,51 @@
   border: 1px solid #D8D8D8;
   border-radius: 5px;
 }
+
+.container {
+  text-align: center
+}
+
+h2 {
+  text-align: center;
+}
+
+.content{
+  padding: 0.5em 2em;
+  margin: 2em 5em;
+  font-weight: bold;
+  color: #6091d3;/*文字色*/
+  background: #FFF;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+}
+
+.content p {
+  font-size: 25px;
+  color: navy;
+}
+
+.content span {
+  font-size: 20px;
+}
+
+h3{
+  text-align: center;
+
+}
+
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}

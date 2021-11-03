@@ -1,0 +1,10 @@
+<h2>家事一覧<h2>
+<a href="#" class="btn-square">家事を作成する</a>
+<div class="container">
+  <% @housework.each do |housework| %>
+    <div class="content" >
+      <p><%= link_to housework.title, housework_path(housework.id) %></p>
+      <span><%= housework.manner %></span>
+    </div>
+  <% end %>
+</div>
