@@ -1,0 +1,9 @@
+  <div class="container">
+    <h2>家事を編集する</h2>
+    <%= form_with(model: @housework, local: true) do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
+      <%= f.text_field :title, placeholder: "タイトル" %>
+      <%= f.text_area :manner, placeholder: "やり方" %>
+      <%= f.submit "編集する" %>
+    <% end %>
+  </div>
