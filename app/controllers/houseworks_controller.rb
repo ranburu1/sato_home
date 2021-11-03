@@ -17,6 +17,10 @@ class HouseworksController < ApplicationController
     end
   end
 
+  def show
+    @housework = Housework.find(params[:id])
+  end
+
   private
 
   def housework_params

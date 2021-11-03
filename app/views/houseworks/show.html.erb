@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="content" >
+      <p><%= @housework.title %></p>
+      <span><%= @housework.manner %></span>
+    </div>
+    <div class="const">
+    <%= link_to "削除", housework_path(@housework.id), method: :delete %>
+    <%= link_to "編集", edit_housework_path(@housework.id) %>
+    </div>
+</div>
