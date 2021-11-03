@@ -2,7 +2,7 @@ class HouseworksController < ApplicationController
   before_action :set_housework, only: [:show, :edit, :update, :destroy]
 
   def index
-    @housework = Housework.all.order('created_at DESC')
+    @housework = Housework.all
   end
 
   def new
@@ -36,7 +36,11 @@ class HouseworksController < ApplicationController
     if @housework.destroy
      redirect_to houseworks_path
     end
-   end
+  end
+
+  def search
+    @houseworks = Housework.search(params[:keyword])
+  end
 
   private
 
