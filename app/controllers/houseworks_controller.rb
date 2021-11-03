@@ -1,4 +1,9 @@
 class HouseworksController < ApplicationController
+
+  def index
+    @housework = Housework.all.order('created_at DESC')
+  end
+
   def new
     @housework = Housework.new
   end
