@@ -1,24 +1,27 @@
-# README
+# アプリ名
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+satoh-home
 
-Things you may want to cover:
+# 概要
 
-* Ruby version
+・我が家の家事、育児のやり方のメモすることができ、閲覧ができる
+・子供の成長日記をつけることができる
 
-* System dependencies
+# 制作背景(意図)
 
-* Configuration
+・我が家の家事のやり方いつでも閲覧できることにより妻以外の人間も家事ができるようにするため
+・子供の成長をデータとして残したかったため
 
-* Database creation
+# 実装予定の内容
 
-* Database initialization
+・育児のやり方のメモ、閲覧機能
+・日記の投稿、閲覧機能
 
-* How to run the test suite
+# DB設計
 
-* Services (job queues, cache servers, search engines, etc.)
+## houseworks テーブル
 
-* Deployment instructions
-
-* ...
+| Column             | Type       | Options     |
+| ------------------ | ---------- | ------------|
+| title              | string     | null: false |
+| manner             | text       | null: false |
